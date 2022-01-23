@@ -1,0 +1,15 @@
+
+
+using CoinGecko.Entities.Response.ExchangeRates;
+
+namespace cripto.Interfaces
+{
+    public interface IExchangeRatesClient
+    {
+          /// <summary>
+        /// Get BTC-to-Currency exchange rates
+        /// </summary>
+        /// <returns></returns>
+        Task<ExchangeRates> GetExchangeRates();
+    }
+}
